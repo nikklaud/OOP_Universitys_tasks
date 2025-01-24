@@ -1,15 +1,33 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.util.Scanner;
+import tasks.*;
+
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Scanner scanner = new Scanner(System.in);
+        while (true) {
+            System.out.println("\nВыберите задачу:");
+            System.out.println("1. Конвертация температуры");
+            System.out.println("2. Среднее из трёх чисел");
+            System.out.println("3. Площадь и периметр прямоугольника");
+            System.out.println("4. Преобразование десятичного числа в двоичное");
+            System.out.println("5. Вычисление формулы");
+            System.out.println("0. Выход");
+            System.out.print("Введите номер задачи: ");
+            int choice = scanner.nextInt();
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + 2);
+            switch (choice) {
+                case 1 -> CelsiusToFahrenheit.run();
+                case 2 -> AverageOfThree.run();
+                case 3 -> Rectangle.run();
+                case 4 -> DecimalToBinary.run();
+                case 5 -> FormulaCalculation.run();
+                case 0 -> {
+                    System.out.println("Выход из программы.");
+                    scanner.close();
+                    return;
+                }
+                default -> System.out.println("Некорректный выбор. Попробуйте снова.");
+            }
         }
     }
 }
