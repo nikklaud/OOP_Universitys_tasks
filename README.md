@@ -1,7 +1,7 @@
 # OOP_Universitys_tasks
 
 ### ToDo:
-- [ ] lab1
+- [x] lab1
 - [ ] lab1-for-advanced
 - [ ] lab2
 - [ ] lab3
