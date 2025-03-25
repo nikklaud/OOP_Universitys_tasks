@@ -7,7 +7,7 @@
 - [x] lab2
 - [x] lab3
 - [x] lab4
-- [ ] lab5
+- [x] lab5
 - [ ] lab6
 - [ ] lab7
 
@@ -16,3 +16,4 @@
 - [x] pract2
 - [x] pract3
 - [x] pract4
+- [x] pract5
