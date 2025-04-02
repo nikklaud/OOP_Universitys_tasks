@@ -8,7 +8,7 @@
 - [x] lab3
 - [x] lab4
 - [x] lab5
-- [ ] lab6
+- [x] lab6
 - [ ] lab7
 
 #### Practs:
