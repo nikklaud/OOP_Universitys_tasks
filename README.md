@@ -21,3 +21,4 @@
 - [x] pract5
 - [x] pract8
 - [x] pract9
+- [x] pract10ct10
